@@ -1,0 +1,19 @@
+```yml
+    name: Deploy
+
+    on:
+      push:
+        branches:
+          - main
+
+    jobs:
+      build:
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@v2
+          - uses: akhileshns/heroku-deploy@v3.12.11
+            with:
+              heroku_api_key: ${{f286c442-84e2-4c48-b805-1b72542e8da1}}
+              heroku_app_name: blooming-sea-09935""
+              heroku_email: "gassiot.andrew@gmail.com"
+    ```
