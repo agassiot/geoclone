@@ -19,10 +19,9 @@ const userSchema = new Schema({
     required: true,
     minlength: 5,
   },
-  thoughts: [
+  score: [
     {
-      type: Schema.Types.ObjectId,
-      ref: 'Thought',
+      type: number,
     },
   ],
 });
