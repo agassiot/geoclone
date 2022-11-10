@@ -1,8 +1,11 @@
 import ReactStreetview from "react-streetview";
+console.log(process.env);
+// import * dotenv from 'dotenv'
+// dotenv.config()
 
 function StreetView() {
   // see https://developers.google.com/maps/documentation/javascript
-  const googleMapsApiKey = "AIzaSyBgxvHrj34L9RGkcpdRrxPF6lUK2n9F48Y";
+  const googleMapsApiKey = process.env.REACT_APP_googleMapsApiKey;
 
   // see https://developers.google.com/maps/documentation/javascript/3.exp/reference#StreetViewPanoramaOptions
   const streetViewPanoramaOptions = {
