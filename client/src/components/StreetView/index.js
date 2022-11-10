@@ -9,7 +9,7 @@ function StreetView() {
 
   // see https://developers.google.com/maps/documentation/javascript/3.exp/reference#StreetViewPanoramaOptions
   const streetViewPanoramaOptions = {
-    position: { lat: 46.9171876, lng: 17.8951832 },
+    position: { lat: 40.6895153, lng: -74.0441928 },
     pov: { heading: 100, pitch: 0 },
     zoom: 1,
   };
@@ -17,11 +17,26 @@ function StreetView() {
   return (
     <div
       style={{
-        width: "1000px",
+        width: "1200px",
         height: "700px",
         backgroundColor: "#eeeeee",
+        position: "relative",
       }}
     >
+      <h4
+        style={{
+          top: "0px",
+          left: "0px",
+          height: "75px",
+          width: "200px",
+          position: "absolute",
+          backgroundColor: "white",
+          zIndex: "2",
+        }}
+      >
+        {" "}
+        Where are we?
+      </h4>
       <ReactStreetview
         apiKey={googleMapsApiKey}
         streetViewPanoramaOptions={streetViewPanoramaOptions}
