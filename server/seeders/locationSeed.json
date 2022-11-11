@@ -1,9 +1,9 @@
 [
   {
     "locationName": "New York",
-    "latitutde": 40.689247,
+    "latitude": 40.689247,
     "longitude": -74.044502,
-    "answersChoices": [
+    "answerChoice": [
       "Arlington",
       "Pheonix",
       "New York",
@@ -12,9 +12,9 @@
   },
   {
     "locationName": "Dallas",
-    "latitutde": 32.7796197,
+    "latitude": 32.7796197,
     "longitude": -96.7624375,
-    "answersChoices": [
+    "answerChoice": [
       "Atlanta",
       "Dallas",
       "Los Angeles",
@@ -24,9 +24,9 @@
   },
   {
     "locationName": "Washington D.C.",
-    "latitutde": 38.8892864,
+    "latitude": 38.8892864,
     "longitude": -77.0411454,
-    "answersChoices": [
+    "answerChoice": [
       "Tampa",
       "Rio",
       "Toronto",

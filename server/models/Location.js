@@ -16,6 +16,7 @@ const locationSchema = new Schema({
   },
   answerChoice: {
     type: String,
+    type: [],
     required: true,
   },
 });

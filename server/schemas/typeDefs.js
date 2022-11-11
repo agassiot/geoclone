@@ -8,13 +8,6 @@ const typeDefs = gql`
     password: String
   }
 
-  type Location {
-    _id: ID
-    latitude: Number
-    longitude: Number
-    answerChoice: String
-  }
-
   type Auth {
     token: ID!
     user: User
