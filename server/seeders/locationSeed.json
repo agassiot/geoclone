@@ -1,7 +1,36 @@
 [
   {
-    "latitutde": "Everyone knows that debugging is twice as hard as writing a program in the first place. So if you're as clever as you can be when you write it, how will you ever debug it?",
-    "longitude": "Brian Kernighan",
+    "locationName": "New York",
+    "latitutde": 40.689247,
+    "longitude": -74.044502,
+    "answersChoices": [
+      "Arlington",
+      "Pheonix",
+      "New York",
+      "Philidelphia"
+    ]
+  },
+  {
+    "locationName": "Dallas",
+    "latitutde": 32.7796197,
+    "longitude": -96.7624375,
+    "answersChoices": [
+      "Atlanta",
+      "Dallas",
+      "Los Angeles",
+      "Seattle"
+    ]
+    
+  },
+  {
+    "locationName": "Washington D.C.",
+    "latitutde": 38.8892864,
+    "longitude": -77.0411454,
+    "answersChoices": [
+      "Tampa",
+      "Rio",
+      "Toronto",
+      "Seoul"
+    ]
   }
-  
 ]
