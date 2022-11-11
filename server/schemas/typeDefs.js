@@ -8,14 +8,6 @@ const typeDefs = gql`
     password: String
   }
 
-  type Location {
-    _id: ID
-    locationName: String
-    latitude: Float
-    longitude: Float
-    answerChoice: [String]
-  }
-
   type Auth {
     token: ID!
     user: User
@@ -24,8 +16,6 @@ const typeDefs = gql`
     users: [User]
     user(username: String!): User
     me: User
-    locations: [Location]
-    location(_id: ID!): Location
   }
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
