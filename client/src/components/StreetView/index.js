@@ -1,9 +1,14 @@
 import ReactStreetview from "react-streetview";
+import { useQuery } from "@apollo/client";
+import { QUERY_LOCATIONS } from "../../utils/queries";
+
 console.log(process.env);
 // import * dotenv from 'dotenv'
 // dotenv.config()
 
 function StreetView() {
+  const { loading, data } = useQuery(QUERY_LOCATIONS, {});
+  console.log(data);
   // see https://developers.google.com/maps/documentation/javascript
   const googleMapsApiKey = process.env.REACT_APP_googleMapsApiKey;
 
