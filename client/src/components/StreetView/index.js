@@ -7,14 +7,15 @@ console.log(process.env);
 // dotenv.config()
 
 function StreetView() {
-  const { loading, data } = useQuery(QUERY_LOCATIONS, {});
-  console.log(data);
+  const { loading, data } = useQuery(QUERY_LOCATIONS);
+  const locations= data?.locations|| [];
+  if (loading) return (<div>loading...</div>)
   // see https://developers.google.com/maps/documentation/javascript
   const googleMapsApiKey = process.env.REACT_APP_googleMapsApiKey;
 
   // see https://developers.google.com/maps/documentation/javascript/3.exp/reference#StreetViewPanoramaOptions
   const streetViewPanoramaOptions = {
-    position: { lat: 40.6895153, lng: -74.0441928 },
+    position: { lat: 30.3290344, lng:  35.44435592 },
     pov: { heading: 100, pitch: 0 },
     zoom: 1,
   };

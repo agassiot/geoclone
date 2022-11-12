@@ -13,7 +13,7 @@ const Playing = () => {
   if (loading) return (<div>loading...</div>)
  console.log(locations)
 
- 
+
   return (
     <main>
       {/* Rendering Street View */}
@@ -22,7 +22,7 @@ const Playing = () => {
       {/* Render multiple choices down below */}
       <h3>Multiple Choice: What city are you in?</h3>
       <ul>
-        {locations.map(location =>(<li>hello World</li>))}
+        {locations[Math.floor(Math.random() * 2)].answerChoice.map(choices =>(<li>{choices}</li>))}
       </ul>
     </main>
   );
