@@ -22,6 +22,7 @@ export const QUERY_LOCATIONS = gql`
       latitude
       longitude
       answerChoice
+      locationName
     }
   }
 `;

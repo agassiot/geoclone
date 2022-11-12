@@ -12,8 +12,8 @@
   },
   {
     "locationName": "Dallas",
-    "latitude": 32.7796197,
-    "longitude": -96.7624375,
+    "latitude": 32.7796676,
+    "longitude": -96.8022648,
     "answerChoice": [
       "Atlanta",
       "Dallas",
@@ -23,14 +23,14 @@
     
   },
   {
-    "locationName": "Washington D.C.",
-    "latitude": 38.8892864,
-    "longitude": -77.0411454,
+    "locationName": "Petra Jordan",
+    "latitude": 30.3290344,
+    "longitude": 35.44435592,
     "answerChoice": [
-      "Tampa",
-      "Rio",
-      "Toronto",
-      "Seoul"
+      "Egypt",
+      "Israel",
+      "Dubai",
+      "Iraq"
     ]
   }
 ]
