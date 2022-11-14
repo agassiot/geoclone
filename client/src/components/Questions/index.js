@@ -9,7 +9,7 @@ const Questions = () => {
     <div>
         <p>Multiple Choice List</p>
         <ul>
-            <li>1{JSON.parse(QUERY_LOCATIONS.locations[0].answerChoice)}</li>
+            <li>1{QUERY_LOCATIONS.JSON.parse(locations[0].answerChoice)}</li>
         </ul>
 
     </div>

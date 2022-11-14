@@ -6,19 +6,28 @@ console.log(process.env);
 // import * dotenv from 'dotenv'
 // dotenv.config()
 
-function StreetView() {
+function StreetView({rand}) {
   const { loading, data } = useQuery(QUERY_LOCATIONS);
   const locations= data?.locations|| [];
+  //rand = Math.floor(Math.random() * 2);
   if (loading) return (<div>loading...</div>)
   // see https://developers.google.com/maps/documentation/javascript
   const googleMapsApiKey = process.env.REACT_APP_googleMapsApiKey;
+  //rand = 0;
+  let latitude = locations[rand].latitude;
+  console.log(latitude)
+  let longitude = locations[rand].longitude;
+  console.log(longitude)
 
+  //console.log(typeof(longitude))
+  //console.log(locations[rand].latitude)
   // see https://developers.google.com/maps/documentation/javascript/3.exp/reference#StreetViewPanoramaOptions
   const streetViewPanoramaOptions = {
-    position: { lat: 30.3290344, lng:  35.44435592 },
+    position: { lat: latitude, lng: longitude},
     pov: { heading: 100, pitch: 0 },
     zoom: 1,
   };
+  
 
   return (
     <div
