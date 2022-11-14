@@ -7,38 +7,20 @@ import Questions from "../components/Questions";
 
 const Playing = () => {
   const { loading, data } = useQuery(QUERY_LOCATIONS);
-  const locations = data?.locations || [];
-  console.log(locations);
-  if (loading) return <div>loading...</div>;
-  console.log(locations);
-  let rand = Math.floor(Math.random() * 3);
-
-  // const locationButton = document.querySelectorAll("li");
-  // locationButton.forEach((item) =>
-  //   item.addEventListener("click", function (event) {
-  //     if (event.target.matches("li")) {
-  //       questionValidation(event);
-  //     }
-  //   })
-  // );
+  const locations= data?.locations|| [];
+  if (loading) return (<div>loading...</div>)
+ console.log(locations)
+ let rand = Math.floor(Math.random() * 2);
 
   return (
     <main>
       {/* Rendering Street View */}
-      <StreetView rand={rand} />
+      <StreetView rand={rand}/>
       {/* <Questions></Questions> */}
       {/* Render multiple choices down below */}
       <h3>Multiple Choice: What city are you in?</h3>
       <ul>
-        {locations[rand].answerChoice.map((choice) => (
-          <li
-            key={choice}
-            className="btn"
-            onClick={(event) => questionValidation(choice)}
-          >
-            {choice}
-          </li>
-        ))}
+        {locations[rand].answerChoice.map(choices =>(<li>{choices}</li>))}
       </ul>
     </main>
   );
