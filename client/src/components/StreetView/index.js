@@ -6,7 +6,7 @@ console.log(process.env);
 // import * dotenv from 'dotenv'
 // dotenv.config()
 
-function StreetView() {
+function StreetView({rand}) {
   const { loading, data } = useQuery(QUERY_LOCATIONS);
   const locations= data?.locations|| [];
   if (loading) return (<div>loading...</div>)
