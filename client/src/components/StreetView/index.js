@@ -13,9 +13,12 @@ function StreetView() {
   // see https://developers.google.com/maps/documentation/javascript
   const googleMapsApiKey = process.env.REACT_APP_googleMapsApiKey;
 
+
+  let latitude = locations[rand].latitude;
+  let longitude = locations[rand].longitude;
   // see https://developers.google.com/maps/documentation/javascript/3.exp/reference#StreetViewPanoramaOptions
   const streetViewPanoramaOptions = {
-    position: { lat: 30.3290344, lng:  35.44435592 },
+    position: { lat: latitude, lng:  longitude },
     pov: { heading: 100, pitch: 0 },
     zoom: 1,
   };
