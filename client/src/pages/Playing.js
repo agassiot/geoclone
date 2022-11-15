@@ -3,8 +3,7 @@ import { useQuery } from "@apollo/client";
 
 import { QUERY_LOCATIONS } from "../utils/queries";
 import StreetView from "../components/StreetView";
-import Questions from "../components/Questions";
-import { useState } from "react";
+import { reactLocalStorage } from "reactjs-localstorage";
 
 const Playing = () => {
   const { loading, data } = useQuery(QUERY_LOCATIONS);
@@ -13,13 +12,12 @@ const Playing = () => {
   if (loading) return <div>loading...</div>;
   console.log(locations);
   let rand = Math.floor(Math.random() * 8);
+  let totalNumberOfQuestion = "3";
+  let showResult = false;
 
   return (
-    <main>
-      {/* Rendering Street View */}
+    <div>
       <StreetView rand={rand} />
-      {/* <Questions></Questions> */}
-      {/* Render multiple choices down below */}
       <h3>Multiple Choice: What city are you in?</h3>
       <ul>
         {locations[rand].answerChoice.map((choice) => (
@@ -32,7 +30,7 @@ const Playing = () => {
           </li>
         ))}
       </ul>
-    </main>
+    </div>
   );
 
   function questionValidation(choice) {
@@ -41,10 +39,30 @@ const Playing = () => {
     console.log(locations[rand]);
     if (choice === locations[rand].locationName) {
       alert("You are correct!");
+      reactLocalStorage.set(
+        "totalScore",
+        parseInt(reactLocalStorage.get("totalScore", 0)) + 10
+      );
     } else {
       alert("You are Wrong!");
     }
-    window.location.reload();
+    reactLocalStorage.set(
+      "currenQuestion",
+      parseInt(reactLocalStorage.get("currenQuestion", 0)) + 1
+    );
+
+    console.log("totalScore", reactLocalStorage.get("totalScore"));
+    console.log(
+      "currenQuestion",
+      parseInt(reactLocalStorage.get("currenQuestion", 1))
+    );
+    console.log("show result", showResult);
+    if (totalNumberOfQuestion == reactLocalStorage.get("currenQuestion", 1)) {
+      showResult = true;
+      window.location.replace("/score");
+    } else {
+      window.location.reload();
+    }
   }
 };
 

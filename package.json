@@ -19,6 +19,7 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "react-hooks-global-state": "^2.0.0",
-    "react-streetview": "^1.1.1"
+    "react-streetview": "^1.1.1",
+    "reactjs-localstorage": "^1.0.1"
   }
 }
