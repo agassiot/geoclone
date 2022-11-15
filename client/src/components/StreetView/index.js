@@ -60,7 +60,7 @@ function StreetView({ rand }) {
         }}
       >
         {" "}
-        Where are we?
+      
       </h4>
       <ReactStreetview
         apiKey={googleMapsApiKey}

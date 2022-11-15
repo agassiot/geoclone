@@ -14,10 +14,10 @@ const Playing = () => {
 
   return (
     <main>
-      {/* Rendering Street View */}
+
+    <div> 
       <StreetView rand={rand}/>
-      {/* <Questions></Questions> */}
-      {/* Render multiple choices down below */}
+    </div>
       <h3>Multiple Choice: What city are you in?</h3>
       <ul>
       {locations[rand].answerChoice.map(choices =>(<button className="relative inline-flex px-16 pl-16 items-center justify-flex-end p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
