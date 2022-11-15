@@ -15,6 +15,7 @@ const Scores = () => {
   return (
     <div style={{
       marginLeft: "925px",
+      paddingTop: "400px",
       padding: "20px"
      
     }}>

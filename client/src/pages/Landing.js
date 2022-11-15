@@ -10,6 +10,11 @@ const Landing = () => {
   };
   return (
 
+    <div style={{
+      marginLeft: "525px",
+      padding: "400px"
+     
+    }}>
     <div className="container">
       <div className="flex flex-col items-center space-y-4">
         <h1 className="w-3/12">
@@ -55,6 +60,7 @@ const Landing = () => {
           )}
         </div>
       </div>
+    </div>
     </div>
   );
 };

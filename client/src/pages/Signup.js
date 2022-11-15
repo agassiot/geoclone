@@ -42,7 +42,7 @@ const Signup = () => {
     <>
     <div style={{
         marginLeft: "925px",
-        padding: "20px"
+        padding: "100px"
        
       }}>
     <main className="flex-row justify-center mb-4">

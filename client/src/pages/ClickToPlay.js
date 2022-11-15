@@ -11,8 +11,8 @@ const ClickToPlay = () => {
     <>
     
     <div style={{
-        marginLeft: "925px",
-        padding: "20px"
+        marginLeft: "601px",
+        padding: "400px"
        
       }}>
     <main>

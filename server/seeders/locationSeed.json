@@ -1,5 +1,5 @@
 [
-    {
+  {
     "locationName": "New York",
     "latitude": 40.68892384,
     "longitude": -74.04398299,
@@ -9,8 +9,8 @@
       "New York",
       "Philidelphia"
     ]
-    },
-   {
+  },
+  {
     "locationName": "Dallas",
     "latitude": 32.7796676,
     "longitude": -96.8022648,
@@ -20,9 +20,8 @@
       "Los Angeles",
       "Seattle"
     ]
-    
-   },
-   {
+  },
+  {
     "locationName": "Jordan",
     "latitude": 30.3290344,
     "longitude": 35.44435592,
@@ -41,7 +40,7 @@
       "Korea",
       "USA",
       "Jordan",
-      "Italty"
+      "Italy"
     ]
   },
   {
@@ -94,9 +93,9 @@
     "longitude": 126.9769655,
     "answerChoice": [
       "China",
-      "Korea",
       "Japan",
-      "Taiwan"
+      "Taiwan",
+      "Korea"
     ]
   },
   {
@@ -142,7 +141,60 @@
       "Israel",
       "Egypt"
     ]
+  },
+  {
+    "locationName": "Bolivia",
+    "latitude": -20.2460303,
+    "longitude": -67.6246743,
+    "answerChoice": [
+      "Venezuela",
+      "Mexico",
+      "Botswana",
+      "Bolivia"
+    ]
+  },
+  {
+    "locationName": "California",
+    "latitude": 37.8207907,
+    "longitude": -122.4799164,
+    "answerChoice": [
+      "Seattle",
+      "Texas",
+      "California",
+      "Florida"
+    ]
+  },
+  {
+    "locationName": "Florida",
+    "latitude": 30.3855172,
+    "longitude": -86.5156007,
+    "answerChoice": [
+      "Texas",
+      "Chicago",
+      "Virginia",
+      "Florida"
+    ]
+  },
+  {
+    "locationName": "The Great Wall",
+    "latitude": 40.4406887,
+    "longitude": 116.5593523,
+    "answerChoice": [
+      "The Long Wall",
+      "The Brick Wall",
+      "The Super Wall",
+      "The Great Wall"
+    ]
+  },
+  {
+    "locationName": "The Taj Mahal",
+    "latitude": 27.1733249,
+    "longitude": 78.0421479,
+    "answerChoice": [
+      "The Kaj Tahal",
+      "The Taj Mahal",
+      "The Daj Gahal",
+      "The Kaj Lahal"
+    ]
   }
 ]
-
-
