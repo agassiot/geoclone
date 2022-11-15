@@ -38,16 +38,22 @@ function StreetView({ rand }) {
   if (!apiKey) return null;
 
   return (
+    <center>
     <div
-      style={{
-        width: "1200px",
-        height: "700px",
-        backgroundColor: "#eeeeee",
+    style={{
+      background: "",
+      width: "100vh",
+      marginTop: "10rem",
+      marginLeft: "20rem",
+      height: "700px",
+      backgroundColor: "#eeeeee",
         position: "relative",
       }}
     >
       <h4
         style={{
+          margin: "10rem",
+          justifySelf: "right",
           top: "0px",
           left: "0px",
           height: "75px",
@@ -65,6 +71,7 @@ function StreetView({ rand }) {
         streetViewPanoramaOptions={streetViewPanoramaOptions}
       />
     </div>
+    </center>
   );
 }
 
