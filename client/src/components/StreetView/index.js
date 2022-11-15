@@ -13,9 +13,7 @@ function StreetView({ rand }) {
   const locations = data?.locations || [];
   useEffect(async () => {
     const response = await fetch("/googleMapAPI");
-
     const apiKey = await response.json();
-
     setApiKey(apiKey);
   }, []);
   //rand = Math.floor(Math.random() * 2);
@@ -28,11 +26,11 @@ function StreetView({ rand }) {
   let longitude = locations[rand].longitude;
   console.log(longitude);
 
-  //console.log(typeof(longitude))
-  //console.log(locations[rand].latitude)
+
+
   // see https://developers.google.com/maps/documentation/javascript/3.exp/reference#StreetViewPanoramaOptions
   const streetViewPanoramaOptions = {
-    position: { lat: latitude, lng: longitude },
+    position: { lat: latitude, lng:  longitude },
     pov: { heading: 100, pitch: 0 },
     zoom: 1,
   };
@@ -60,7 +58,7 @@ function StreetView({ rand }) {
         }}
       >
         {" "}
-        Where are we?
+      
       </h4>
       <ReactStreetview
         apiKey={googleMapsApiKey}
