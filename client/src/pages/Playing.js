@@ -7,38 +7,24 @@ import Questions from "../components/Questions";
 
 const Playing = () => {
   const { loading, data } = useQuery(QUERY_LOCATIONS);
-  const locations = data?.locations || [];
-  console.log(locations);
-  if (loading) return <div>loading...</div>;
-  console.log(locations);
-  let rand = Math.floor(Math.random() * 3);
-
-  // const locationButton = document.querySelectorAll("li");
-  // locationButton.forEach((item) =>
-  //   item.addEventListener("click", function (event) {
-  //     if (event.target.matches("li")) {
-  //       questionValidation(event);
-  //     }
-  //   })
-  // );
+  const locations= data?.locations|| [];
+  if (loading) return (<div>loading...</div>)
+ console.log(locations)
+ let rand = Math.floor(Math.random() * 2);
 
   return (
     <main>
-      {/* Rendering Street View */}
-      <StreetView rand={rand} />
-      {/* <Questions></Questions> */}
-      {/* Render multiple choices down below */}
+
+    <div> 
+      <StreetView rand={rand}/>
+    </div>
       <h3>Multiple Choice: What city are you in?</h3>
       <ul>
-        {locations[rand].answerChoice.map((choice) => (
-          <li
-            key={choice}
-            className="btn"
-            onClick={(event) => questionValidation(choice)}
-          >
-            {choice}
-          </li>
-        ))}
+      {locations[rand].answerChoice.map(choices =>(<button className="relative inline-flex px-16 pl-16 items-center justify-flex-end p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+  <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+     <li key={choices}>{choices}</li>
+  </span>
+</button>))}
       </ul>
     </main>
   );
