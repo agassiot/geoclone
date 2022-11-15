@@ -1,8 +1,8 @@
 [
   {
     "locationName": "New York",
-    "latitude": 40.689247,
-    "longitude": -74.044502,
+    "latitude": 40.68892384,
+    "longitude": -74.04398299,
     "answerChoice": [
       "Arlington",
       "Pheonix",
@@ -32,5 +32,117 @@
       "Jordan",
       "Iraq"
     ]
+  },
+  {
+    "locationName": "Italy",
+    "latitude": 41.889989,
+    "longitude": 12.49252,
+    "answerChoice": [
+      "Korea",
+      "USA",
+      "Jordan",
+      "Italty"
+    ]
+  },
+  {
+    "locationName": "Antartica",
+    "latitude": -77.554514,
+    "longitude": 166.162701,
+    "answerChoice": [
+      "Antartica",
+      "North Pole",
+      "South Pole",
+      "Greenland"
+    ]
+  },
+  {
+    "locationName": "England",
+    "latitude": 51.17889,
+    "longitude": -1.826215,
+    "answerChoice": [
+      "Denmark",
+      "England",
+      "Germany",
+      "Spain"
+    ]
+  },
+  {
+    "locationName": "Peru",
+    "latitude": -13.1650709,
+    "longitude": -72.5447154,
+    "answerChoice": [
+      "Columbia",
+      "Peru",
+      "Bolivia",
+      "Argentina"
+    ]
+  },
+  {
+    "locationName": "Yellowstone",
+    "latitude": 44.46002944,
+    "longitude": -110.82673232,
+    "answerChoice": [
+      "Yellowstone",
+      "Grand Canyon",
+      "Yosemite",
+      "Hot Springs"
+    ]
+  },
+  {
+    "locationName": "Korea",
+    "latitude": 37.5778632,
+    "longitude": 126.9769655,
+    "answerChoice": [
+      "China",
+      "Korea",
+      "Japan",
+      "Taiwan"
+    ]
+  },
+  {
+    "locationName": "China",
+    "latitude": 37.5778632,
+    "longitude": 126.9769655,
+    "answerChoice": [
+      "Taiwan",
+      "Japan",
+      "Korea",
+      "China"
+    ]
+  },
+  {
+    "locationName": "USA",
+    "latitude": 36.07443494,
+    "longitude": -112.15506166,
+    "answerChoice": [
+      "Austrailia",
+      "Canada",
+      "USA",
+      "Rusia"
+    ]
+  },
+  {
+    "locationName": "Austrailia",
+    "latitude": -33.85934045,
+    "longitude": 151.22167402,
+    "answerChoice": [
+      "Uruguay",
+      "Austrailia",
+      "Paraguay",
+      "Brazil"
+    ]
+  },
+  {
+    "locationName": "Egypt",
+    "latitude": 29.9765443,
+    "longitude": 31.12842558,
+    "answerChoice": [
+      "Sudan",
+      "Turkey",
+      "Israel",
+      "Egypt"
+    ]
   }
 ]
+
+
