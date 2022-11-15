@@ -27,6 +27,9 @@ export const QUERY_LOCATIONS = gql`
   }
 `;
 
+
+
+
 export const QUERY_THOUGHTS = gql`
   query getThoughts {
     thoughts {

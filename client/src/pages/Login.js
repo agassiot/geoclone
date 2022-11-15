@@ -42,6 +42,11 @@ const Login = (props) => {
 
   return (
     <main>
+      <div style={{
+        marginLeft: "925px",
+        padding: "20px"
+       
+      }}>
       <div className="card">
         <h4 className="card-header bg-dark text-light p-2">Login</h4>
         {data ? (
@@ -104,6 +109,7 @@ const Login = (props) => {
         {error && (
           <div className="my-3 p-3 bg-danger text-white">{error.message}</div>
         )}
+      </div>
       </div>
     </main>
   );

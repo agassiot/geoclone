@@ -18,6 +18,8 @@ import Landing from "./pages/Landing";
 // import SingleThought from "./pages/SingleThought";
 // import Profile from "./pages/Profile";
 import Footer from "./components/Footer";
+import earthImage from "./images/nasa.jpg"
+
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -44,9 +46,17 @@ const client = new ApolloClient({
 });
 
 function App() {
+
+    const backgroundImageStyle = {
+      backgroundImage: `url("${earthImage}")`,
+      backgroundSize: "cover",
+      height:"1440px",
+    }
+
   return (
+    <main style={backgroundImageStyle}>
     <ApolloProvider client={client}>
-      <Router>
+      <Router >
         <div className="flex-column justify-flex-start min-100-vh">
           <div className="container">
             <Routes>
@@ -65,6 +75,7 @@ function App() {
         </div>
       </Router>
     </ApolloProvider>
+    </main>
   );
 }
 

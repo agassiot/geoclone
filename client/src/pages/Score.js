@@ -13,16 +13,23 @@ const Scores = () => {
   }
 
   return (
-    <main>
+    <div style={{
+      marginLeft: "925px",
+      paddingTop: "400px",
+      padding: "20px"
+     
+    }}>
+    <main className="mb-4 w-text-4xl font-extrabold tracking-tight text-slate-200 md:text-9xl lg:text-6xl">
       Your score is {getScore()}
       {". "}
-      Click{" "}
+      {/* Click{" "} */}
       <Link to="/clicktoplay" onClick={clearData}>
         {" "}
-        here{" "}
+        Click here to play again.{" "}
       </Link>
-      to play again.
+      {/* to play again. */}
     </main>
+    </div>
   );
 };
 

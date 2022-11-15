@@ -8,15 +8,24 @@ const ClickToPlay = () => {
   }
 
   return (
+    <>
+    
+    <div style={{
+        marginLeft: "601px",
+        padding: "400px"
+       
+      }}>
     <main>
       <Link
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-12 px-28 rounded-full lg:text-4xl"
         to="/playing"
         onClick={clearData}
       >
-        CLICK HERE TO PLAY!
+        PLAY!
       </Link>
     </main>
+    </div>
+    </>
   );
 };
 
