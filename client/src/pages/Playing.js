@@ -21,13 +21,13 @@ const Playing = () => {
       <h3>Multiple Choice: What city are you in?</h3>
       <ul>
         {locations[rand].answerChoice.map((choice) => (
-          <li
-            key={choice}
-            className="btn"
-            onClick={(event) => questionValidation(choice)}
-          >
-            {choice}
-          </li>
+          <button className="relative inline-flex px-16 pl-16 items-center justify-flex-end p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+            <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+              <li onClick={(event) => questionValidation(choice)} key={choice}>
+                {choice}
+              </li>
+            </span>
+          </button>
         ))}
       </ul>
     </div>

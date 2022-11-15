@@ -10,7 +10,7 @@ const ClickToPlay = () => {
   return (
     <main>
       <Link
-        className="btn btn-lg btn-info m-2"
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
         to="/playing"
         onClick={clearData}
       >
