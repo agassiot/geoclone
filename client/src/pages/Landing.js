@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Auth from "../../utils/auth";
+import Auth from "../utils/auth";
 
 const Landing = () => {
   const logout = (event) => {
@@ -9,13 +9,18 @@ const Landing = () => {
     Auth.logout();
   };
   return (
-    <header className="bg-primary text-light mb-4 py-3 flex-row align-center">
-      <div className="container flex-row justify-space-between-lg justify-center align-center">
-        <div>
-          <Link className="text-light" to="/">
-            <h1 className="m-0">Tech Thoughts</h1>
+    <div className="container">
+      <div className="flex flex-col items-center space-y-4">
+        <div className="border boerder-gray-200 rounded">
+          <Link
+            className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+            to="/"
+          >
+            <p className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">
+              GeoPicker
+            </p>
           </Link>
-          <p className="m-0">Get into the mind of a programmer.</p>
+          <p className="m-0">Are you able to make an educated guess?</p>
         </div>
         <div>
           {Auth.loggedIn() ? (
@@ -39,7 +44,7 @@ const Landing = () => {
           )}
         </div>
       </div>
-    </header>
+    </div>
   );
 };
 
