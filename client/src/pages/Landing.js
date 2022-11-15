@@ -9,6 +9,7 @@ const Landing = () => {
     Auth.logout();
   };
   return (
+
     <div className="container">
       <div className="flex flex-col items-center space-y-4">
         <h1 className="w-3/12">
