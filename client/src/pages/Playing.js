@@ -4,6 +4,7 @@ import { useQuery } from "@apollo/client";
 import { QUERY_LOCATIONS } from "../utils/queries";
 import StreetView from "../components/StreetView";
 import Questions from "../components/Questions";
+import { useState } from "react";
 
 const Playing = () => {
   const { loading, data } = useQuery(QUERY_LOCATIONS);
@@ -11,16 +12,7 @@ const Playing = () => {
   console.log(locations);
   if (loading) return <div>loading...</div>;
   console.log(locations);
-  let rand = Math.floor(Math.random() * 3);
-
-  // const locationButton = document.querySelectorAll("li");
-  // locationButton.forEach((item) =>
-  //   item.addEventListener("click", function (event) {
-  //     if (event.target.matches("li")) {
-  //       questionValidation(event);
-  //     }
-  //   })
-  // );
+  let rand = Math.floor(Math.random() * 8);
 
   return (
     <main>
@@ -47,12 +39,12 @@ const Playing = () => {
     console.log(choice);
     // console.log(locations.locationName);
     console.log(locations[rand]);
-    if (choice === locations[rand].locationName)
-      console.log("You are correct!");
-    else {
-      console.log("You are Wrong!");
+    if (choice === locations[rand].locationName) {
+      alert("You are correct!");
+    } else {
+      alert("You are Wrong!");
     }
-    // window.location.reload();
+    window.location.reload();
   }
 };
 

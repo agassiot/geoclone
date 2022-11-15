@@ -1,8 +1,8 @@
 [
   {
     "locationName": "New York",
-    "latitude": 40.689247,
-    "longitude": -74.044502,
+    "latitude": 40.68892384,
+    "longitude": -74.04398299,
     "answerChoice": [
       "Arlington",
       "Pheonix",
@@ -31,6 +31,61 @@
       "Israel",
       "Jordan",
       "Iraq"
+    ]
+  },
+  {
+    "locationName": "Italy",
+    "latitude": 41.889989,
+    "longitude": 12.49252,
+    "answerChoice": [
+      "Korea",
+      "USA",
+      "Jordan",
+      "Italty"
+    ]
+  },
+  {
+    "locationName": "France",
+    "latitude": -77.554514,
+    "longitude": 166.162701,
+    "answerChoice": [
+      "Antartica",
+      "North Pole",
+      "South Pole",
+      "Greenland"
+    ]
+  },
+  {
+    "locationName": "England",
+    "latitude": 51.17889,
+    "longitude": -1.826215,
+    "answerChoice": [
+      "Denmark",
+      "England",
+      "Germany",
+      "Spain"
+    ]
+  },
+  {
+    "locationName": "Peru",
+    "latitude": -13.1650709,
+    "longitude": -72.5447154,
+    "answerChoice": [
+      "Columbia",
+      "Peru",
+      "Bolivia",
+      "Argentina"
+    ]
+  },
+  {
+    "locationName": "Yellowstone",
+    "latitude": 44.46002944,
+    "longitude": -110.82673232,
+    "answerChoice": [
+      "Yellowstone",
+      "Grand Canyon",
+      "Yosemite",
+      "Hot Springs"
     ]
   }
 ]
