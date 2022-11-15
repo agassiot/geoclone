@@ -14,7 +14,7 @@ const Landing = () => {
       <div className="flex flex-col items-center space-y-4">
         <h1 className="w-3/12">
           <Link to="/">
-            <h1 className="mb-4 w-text-4xl font-extrabold tracking-tight hover:text-green-500 leading-none text-gray-900 md:text-5xl lg:text-6xl ">
+            <h1 className="mb-4 w-text-4xl font-extrabold tracking-tight hover:text-green-500 leading-none text-slate-200 md:text-9xl lg:text-9xl ">
               geoClone
             </h1>
           </Link>

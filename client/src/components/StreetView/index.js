@@ -52,20 +52,21 @@ function StreetView({ rand }) {
     >
       <h4
         style={{
-          margin: "10rem",
+          margin: "0rem",
           justifySelf: "right",
           top: "0px",
           left: "0px",
           height: "75px",
-          width: "250px",
+          width: "6000px",
           position: "absolute",
-          backgroundColor: "white",
+          backgroundColor: "black",
           zIndex: "2",
         }}
       >
-        {" "}
+           {" "}
       
       </h4>
+       
       <ReactStreetview
         apiKey={googleMapsApiKey}
         streetViewPanoramaOptions={streetViewPanoramaOptions}
