@@ -13,9 +13,7 @@ function StreetView({ rand }) {
   const locations = data?.locations || [];
   useEffect(async () => {
     const response = await fetch("/googleMapAPI");
-
     const apiKey = await response.json();
-
     setApiKey(apiKey);
   }, []);
   //rand = Math.floor(Math.random() * 2);
