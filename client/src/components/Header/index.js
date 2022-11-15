@@ -9,23 +9,39 @@ const Header = () => {
     Auth.logout();
   };
   return (
-    <header className="bg-primary text-light mb-4 py-3 flex-row align-center">
-      <div className="container flex-row justify-space-between-lg justify-center align-center">
-        <div>
-          <Link className="text-light" to="/">
-            <h1 className="m-0">Tech Thoughts</h1>
+    <header className="header sticky top-0 bg-white shadow-md flex items-center justify-between px-8 py-02">
+    <h1 className="w-3/12">
+        
+          <Link  to="/">
+            <h1 className="mb-4 w-text-4xl font-extrabold tracking-tight hover:text-green-500 leading-none text-gray-900 md:text-5xl lg:text-6xl ">geoClone</h1>
           </Link>
-          <p className="m-0">Get into the mind of a programmer.</p>
-        </div>
-        <div>
+        
+    </h1>
           {Auth.loggedIn() ? (
             <>
-              <Link className="btn btn-lg btn-info m-2" to="/me">
+
+<nav className="nav font-semibold text-lg">
+        <ul className="flex items-center">
+            <li className="p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer active">
+                            <Link to="/me">
+                <button type="button" className="text-black bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mx-8 mb-2" >
                 {Auth.getProfile().data.username}'s profile
+                </button>
               </Link>
-              <button className="btn btn-lg btn-light m-2" onClick={logout}>
+
+            </li>
+
+
+            <li class="p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer">
+               <button type="button" className="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 pl-5 py-2.5 text-center ml-5 mb-2" onClick={logout}>
                 Logout
               </button>
+
+            </li>
+          
+        </ul>
+    </nav>
+
             </>
           ) : (
             <>
@@ -37,8 +53,6 @@ const Header = () => {
               </Link>
             </>
           )}
-        </div>
-      </div>
     </header>
   );
 };

@@ -29,8 +29,7 @@ function StreetView({ rand }) {
   console.log(longitude);
 
 
-  let latitude = locations[rand].latitude;
-  let longitude = locations[rand].longitude;
+
   // see https://developers.google.com/maps/documentation/javascript/3.exp/reference#StreetViewPanoramaOptions
   const streetViewPanoramaOptions = {
     position: { lat: latitude, lng:  longitude },
