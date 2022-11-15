@@ -45,7 +45,7 @@
     ]
   },
   {
-    "locationName": "France",
+    "locationName": "Antartica",
     "latitude": -77.554514,
     "longitude": 166.162701,
     "answerChoice": [
@@ -87,5 +87,62 @@
       "Yosemite",
       "Hot Springs"
     ]
+  },
+  {
+    "locationName": "Korea",
+    "latitude": 37.5778632,
+    "longitude": 126.9769655,
+    "answerChoice": [
+      "China",
+      "Korea",
+      "Japan",
+      "Taiwan"
+    ]
+  },
+  {
+    "locationName": "China",
+    "latitude": 37.5778632,
+    "longitude": 126.9769655,
+    "answerChoice": [
+      "Taiwan",
+      "Japan",
+      "Korea",
+      "China"
+    ]
+  },
+  {
+    "locationName": "USA",
+    "latitude": 36.07443494,
+    "longitude": -112.15506166,
+    "answerChoice": [
+      "Austrailia",
+      "Canada",
+      "USA",
+      "Rusia"
+    ]
+  },
+  {
+    "locationName": "Austrailia",
+    "latitude": -33.85934045,
+    "longitude": 151.22167402,
+    "answerChoice": [
+      "Uruguay",
+      "Austrailia",
+      "Paraguay",
+      "Brazil"
+    ]
+  },
+  {
+    "locationName": "Egypt",
+    "latitude": 29.9765443,
+    "longitude": 31.12842558,
+    "answerChoice": [
+      "Sudan",
+      "Turkey",
+      "Israel",
+      "Egypt"
+    ]
   }
 ]
+
+

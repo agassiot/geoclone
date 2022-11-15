@@ -11,8 +11,8 @@ const Playing = () => {
   console.log(locations);
   if (loading) return <div>loading...</div>;
   console.log(locations);
-  let rand = Math.floor(Math.random() * 8);
-  let totalNumberOfQuestion = "8";
+  let rand = Math.floor(Math.random() * 13);
+  let totalNumberOfQuestion = "6";
   let showResult = false;
 
   return (
@@ -57,7 +57,7 @@ const Playing = () => {
       parseInt(reactLocalStorage.get("currenQuestion", 1))
     );
     console.log("show result", showResult);
-    if (totalNumberOfQuestion == reactLocalStorage.get("currenQuestion", 1)) {
+    if (totalNumberOfQuestion === reactLocalStorage.get("currenQuestion", 1)) {
       showResult = true;
       window.location.replace("/score");
     } else {
