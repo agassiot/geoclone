@@ -18,6 +18,10 @@ const Playing = () => {
   return (
     <div>
       <StreetView rand={rand} />
+      <center>
+      <div style={{
+        marginLeft: "20rem"
+      }}>
       <h3>Multiple Choice: What city are you in?</h3>
       <ul>
         {locations[rand].answerChoice.map((choice) => (
@@ -30,6 +34,8 @@ const Playing = () => {
           </button>
         ))}
       </ul>
+      </div>
+     </center>
     </div>
   );
 
