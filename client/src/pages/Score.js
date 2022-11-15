@@ -5,7 +5,7 @@ import { reactLocalStorage } from "reactjs-localstorage";
 const Scores = () => {
   function getScore() {
     const score = reactLocalStorage.get("totalScore", 0);
-    console.log("score", score);
+    conole.log("score", score);
     return score;
   }
   function clearData() {

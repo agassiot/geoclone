@@ -13,7 +13,7 @@ import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import ClickToPlay from "./pages/ClickToPlay";
 import Playing from "./pages/Playing";
-import Score from "./pages/Score";
+import Scores from "./pages/Score";
 import Landing from "./pages/Landing";
 // import SingleThought from "./pages/SingleThought";
 // import Profile from "./pages/Profile";
@@ -54,7 +54,7 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/clicktoplay" element={<ClickToPlay />} />
               <Route path="/playing" element={<Playing />} />
-              <Route path="/score" element={<Score />} />
+              <Route path="/score" element={<Scores />} />
               <Route path="/signup" element={<Signup />} />
               {/* <Route path="/me" element={<Profile />} /> */}
               {/* <Route path="/profiles/:username" element={<Profile />} /> */}
