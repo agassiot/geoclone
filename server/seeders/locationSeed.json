@@ -32,72 +32,6 @@
       "Jordan",
       "Iraq"
     ]
-<<<<<<< HEAD
-    },
-     {
-      "locationName": "mexico",
-      "latitude": 32.7796676,
-      "longitude": -96.8022648,
-      "answerChoice": [
-        "louisiana",
-        "florida",
-        "alabama",
-        "mexico"
-      ]
-      
-     },
-     {
-      "locationName": "mansfield",
-      "latitude": 32.7796676,
-      "longitude": -96.8022648,
-      "answerChoice": [
-        "lakview",
-        "mansfield",
-        "elgacy",
-        "donn kirk"
-      ]
-      
-     },
-     {
-      "locationName": "ft worth",
-      "latitude": 32.7796676,
-      "longitude": -96.8022648,
-      "answerChoice": [
-        "ft worth",
-        "gp",
-        "grapevine",
-        "seagoville"
-      ]
-      
-     },
-     {
-      "locationName": "shgoogahtle",
-      "latitude": 32.7796676,
-      "longitude": -96.8022648,
-      "answerChoice": [
-        "dougha",
-        "pougalas",
-        "lougageles",
-        "shgoogahtle"
-      ]
-      
-     },
-     {
-      "locationName": "arlington",
-      "latitude": 32.7796676,
-      "longitude": -96.8022648,
-      "answerChoice": [
-        "Atl",
-        "arlington",
-        "Los An",
-        "Se"
-      ]
-      
-     }
-
-]
-
-=======
   },
   {
     "locationName": "Italy",
@@ -212,4 +146,3 @@
 ]
 
 
->>>>>>> 0c11cb617cbee75c847a45a34c3e2e9505f51739
