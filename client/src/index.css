@@ -690,8 +690,16 @@ video {
   display: inline-flex;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .w-3\/12 {
   width: 25%;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .w-96 {
