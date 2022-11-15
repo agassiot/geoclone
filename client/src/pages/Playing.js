@@ -12,7 +12,7 @@ const Playing = () => {
   if (loading) return <div>loading...</div>;
   console.log(locations);
   let rand = Math.floor(Math.random() * 8);
-  let totalNumberOfQuestion = "3";
+  let totalNumberOfQuestion = "8";
   let showResult = false;
 
   return (
