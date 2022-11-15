@@ -1,5 +1,5 @@
 [
-  {
+    {
     "locationName": "New York",
     "latitude": 40.689247,
     "longitude": -74.044502,
@@ -9,8 +9,8 @@
       "New York",
       "Philidelphia"
     ]
-  },
-  {
+    },
+   {
     "locationName": "Dallas",
     "latitude": 32.7796676,
     "longitude": -96.8022648,
@@ -21,8 +21,8 @@
       "Seattle"
     ]
     
-  },
-  {
+   },
+   {
     "locationName": "Jordan",
     "latitude": 30.3290344,
     "longitude": 35.44435592,
@@ -32,5 +32,67 @@
       "Jordan",
       "Iraq"
     ]
-  }
+    },
+     {
+      "locationName": "mexico",
+      "latitude": 32.7796676,
+      "longitude": -96.8022648,
+      "answerChoice": [
+        "louisiana",
+        "florida",
+        "alabama",
+        "mexico"
+      ]
+      
+     },
+     {
+      "locationName": "mansfield",
+      "latitude": 32.7796676,
+      "longitude": -96.8022648,
+      "answerChoice": [
+        "lakview",
+        "mansfield",
+        "elgacy",
+        "donn kirk"
+      ]
+      
+     },
+     {
+      "locationName": "ft worth",
+      "latitude": 32.7796676,
+      "longitude": -96.8022648,
+      "answerChoice": [
+        "ft worth",
+        "gp",
+        "grapevine",
+        "seagoville"
+      ]
+      
+     },
+     {
+      "locationName": "shgoogahtle",
+      "latitude": 32.7796676,
+      "longitude": -96.8022648,
+      "answerChoice": [
+        "dougha",
+        "pougalas",
+        "lougageles",
+        "shgoogahtle"
+      ]
+      
+     },
+     {
+      "locationName": "arlington",
+      "latitude": 32.7796676,
+      "longitude": -96.8022648,
+      "answerChoice": [
+        "Atl",
+        "arlington",
+        "Los An",
+        "Se"
+      ]
+      
+     }
+
 ]
+
