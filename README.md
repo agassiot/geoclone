@@ -1,6 +1,6 @@
  <h1 align="left"> Untitled </h1>  
  <p align="right">
-  <a href="https://github.com/agassiot/notefy/blob/main/LICENSE.md">
+  <a href="https://github.com/agassiot/geoclone/blob/main/LICENSE.md">
         <img alt="License: MIT" src="https://img.shields.io/github/license/agassiot/notefy?style=plastic" target="_blank"/>
     </a>
  <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=plastic&logo=javascript&logoColor=%23F7DF1E" target="_blank"/>
@@ -25,7 +25,7 @@
 
 ## Description
             
-Description of our app
+A geography guessing game, inspired by GeoGuessr!
             
 ## Installation
             
@@ -41,7 +41,7 @@ MarcoFerreira07, Ohyubin3, agassiot collaboration
 
 ## Features
             
-Stuff with GraphQL, Apollo, Login authentication etc etc.
+Game data and user data stored & maintained using MongoDB and Atlas. 
               
 ## Struggles
             
@@ -53,7 +53,7 @@ Github Pages https://github.com/agassiot \
              https://github.com/MarcoFerreira07 \
              https://github.com/ohyubin3 \
 Github Repository https://github.com/agassiot/github-cd \
-Live Link tbd
+Live Link https://intense-retreat-71169.herokuapp.com/
             
           
 
